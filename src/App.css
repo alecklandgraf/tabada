@@ -1,38 +1,126 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-color: #282c34;
+  align-content: center;
+}
+
+
+.container {
+  text-align: center;
+  min-height: 100vh;
+  /* background-color: #282c34; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.7fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.settings {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+
+}
+label {
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+input {
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.timer {
+  align-content: center;
+  flex: 1;
+}
+.time {
+  font-variant-numeric: tabular-nums;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #557dcc;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+/* generate css for an action class that show an ephasized work */
+.action {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #557dcc;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn {
+  min-width: 70vw;
+  -webkit-text-size-adjust: 100%;
+  --color-code-green: #b5f4a5;
+  --color-code-yellow: #ffe484;
+  --color-code-purple: #d9a9ff;
+  --color-code-red: #ff8383;
+  --color-code-blue: #93ddfd;
+  --color-code-white: #fff;
+  --docsearch-primary-color: #38b2ac;
+  --docsearch-text-color: #1c1e21;
+  --docsearch-icon-stroke-width: 1.4;
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-muted-color: #969faf;
+  --docsearch-container-background: rgba(101,108,133,0.8);
+  --docsearch-logo-color: #5468ff;
+  --docsearch-modal-width: 560px;
+  --docsearch-modal-height: 600px;
+  --docsearch-modal-background: #f5f6f7;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0,0%,100%,0.5),0 3px 8px 0 #555a64;
+  --docsearch-searchbox-height: 56px;
+  --docsearch-searchbox-background: #ebedf0;
+  --docsearch-searchbox-focus-background: #fff;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
+  --docsearch-hit-height: 56px;
+  --docsearch-hit-color: #444950;
+  --docsearch-hit-active-color: #fff;
+  --docsearch-hit-background: #fff;
+  --docsearch-hit-shadow: 0 1px 3px 0 #d4d9e1;
+  --docsearch-key-gradient: linear-gradient(-225deg,#d5dbe4,#f8f8f8);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,0.4);
+  --docsearch-footer-background: #fff;
+  --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8,0 -3px 6px 0 rgba(69,98,155,0.12);
+  --docsearch-spacing: 10px;
+  --docsearch-footer-height: 40px;
+  -webkit-font-smoothing: antialiased!important;
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-image: none;
+  cursor: pointer;
+  line-height: inherit;
+  --bg-opacity: 1!important;
+  background-color: rgba(66,153,225,var(--bg-opacity))!important;
+  --border-opacity: 1!important;
+  border-color: rgba(43,108,176,var(--border-opacity))!important;
+  border-radius: .25rem!important;
+  border-bottom-width: 4px!important;
+  font-weight: 700!important;
+  padding-top: .5rem!important;
+  padding-bottom: .5rem!important;
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
+  --text-opacity: 1!important;
+  color: rgba(255,255,255,var(--text-opacity))!important;
 }
+
