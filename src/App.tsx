@@ -26,6 +26,12 @@ function Timer({ work, prepare, rest, cycles, onEnd }: TimerProps) {
   const inPrepare = elapsedMillis < prepare * 1000;
 
   useEffect(() => {
+    if (elapsedMillis > totalTimeSeconds * 1000) {
+      onEnd();
+    }
+  }, [elapsedMillis, onEnd, totalTimeSeconds]);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setTick((tick) => tick + 1);
     }, 200);
