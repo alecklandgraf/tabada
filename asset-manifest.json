@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tabata/static/css/main.b4178ce2.css",
-    "main.js": "/tabata/static/js/main.d5b9d276.js",
-    "static/js/453.8bd6d381.chunk.js": "/tabata/static/js/453.8bd6d381.chunk.js",
-    "service-worker.js": "/tabata/service-worker.js",
-    "index.html": "/tabata/index.html",
-    "main.b4178ce2.css.map": "/tabata/static/css/main.b4178ce2.css.map",
-    "main.d5b9d276.js.map": "/tabata/static/js/main.d5b9d276.js.map",
-    "453.8bd6d381.chunk.js.map": "/tabata/static/js/453.8bd6d381.chunk.js.map"
+    "main.css": "/static/css/main.b4178ce2.css",
+    "main.js": "/static/js/main.e7840eed.js",
+    "static/js/453.8bd6d381.chunk.js": "/static/js/453.8bd6d381.chunk.js",
+    "service-worker.js": "/service-worker.js",
+    "index.html": "/index.html",
+    "main.b4178ce2.css.map": "/static/css/main.b4178ce2.css.map",
+    "main.e7840eed.js.map": "/static/js/main.e7840eed.js.map",
+    "453.8bd6d381.chunk.js.map": "/static/js/453.8bd6d381.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4178ce2.css",
-    "static/js/main.d5b9d276.js"
+    "static/js/main.e7840eed.js"
   ]
 }
